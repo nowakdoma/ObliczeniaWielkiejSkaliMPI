@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define N 2000
+
 int main(int argc, char **argv)
 {FILE *plik;
 int i,j;
@@ -12,9 +14,9 @@ int i,j;
       exit(0);
    }
  
-    for (i = 0; i < 32; i++)
+    for (i = 0; i < N * 2; i++)
     {
-        for (j = 0; j < 16; j++)
+        for (j = 0; j < N; j++)
         {
             fprintf(plik, "%0.1f ", (float)i+1);
 
